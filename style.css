@@ -180,7 +180,7 @@ footer {
 /* Trusted Brands Section */
 #trusted-brands {
     text-align: center;
-    padding: 50px 20px;
+    padding: 60px 20px;
     background-color: var(--background-color);
 }
 
@@ -196,17 +196,17 @@ footer {
     margin-bottom: 20px;
 }
 
-/* Logo Grid */
+/* Logo Grid - Desktop First */
 .brands-container {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    gap: 20px;
+    gap: 30px;
 }
 
 .brands-container img {
-    width: 120px; /* Adjust the size based on design */
+    width: 140px; /* Default size for desktop */
     height: auto;
     filter: grayscale(100%);
     transition: filter 0.3s ease-in-out;
@@ -214,4 +214,53 @@ footer {
 
 .brands-container img:hover {
     filter: grayscale(0%);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 1024px) {
+    #trusted-brands {
+        padding: 50px 15px;
+    }
+
+    .brands-container img {
+        width: 120px; /* Slightly smaller for tablets */
+    }
+}
+
+@media (max-width: 768px) {
+    .brands-container {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .brands-container img {
+        width: 100px; /* Smaller for mobile */
+    }
+
+    #trusted-brands h2 {
+        font-size: 1.75rem;
+    }
+
+    #trusted-brands p {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 480px) {
+    #trusted-brands {
+        padding: 40px 10px;
+    }
+
+    .brands-container img {
+        width: 80px; /* Even smaller for very small screens */
+    }
+
+    #trusted-brands h2 {
+        font-size: 1.5rem;
+    }
+
+    #trusted-brands p {
+        font-size: 0.85rem;
+    }
 }
