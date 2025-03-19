@@ -48,8 +48,13 @@ nav ul li a {
     color: white;
     text-align: center;
     padding: 80px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
+/* Hero Content */
 .hero-content {
     max-width: 800px;
     margin: 0 auto;
@@ -117,4 +122,56 @@ footer {
     text-align: center;
     padding: 10px;
     width: 100%;
+}
+
+/* ✅ RESPONSIVE DESIGN */
+
+/* Tablets (Max Width 768px) */
+@media (max-width: 768px) {
+    #hero {
+        padding: 60px 15px;
+    }
+
+    #hero h1 {
+        font-size: 2rem; /* Reduce font size */
+    }
+
+    #hero p {
+        font-size: 1rem;
+    }
+
+    .hero-buttons {
+        flex-direction: column; /* Stack buttons vertically */
+        gap: 10px;
+    }
+
+    .btn-primary, .btn-secondary {
+        width: 100%; /* Full-width buttons */
+        padding: 10px 20px;
+    }
+}
+
+/* Mobile Devices (Max Width 480px) */
+@media (max-width: 480px) {
+    #hero {
+        padding: 50px 10px;
+    }
+
+    #hero h1 {
+        font-size: 1.8rem; /* Further reduce font size */
+    }
+
+    #hero p {
+        font-size: 0.9rem;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .btn-primary, .btn-secondary {
+        width: 100%;
+        padding: 10px;
+    }
 }
