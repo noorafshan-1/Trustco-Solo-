@@ -175,3 +175,43 @@ footer {
         padding: 10px;
     }
 }
+
+
+/* Trusted Brands Section */
+#trusted-brands {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: var(--background-color);
+}
+
+#trusted-brands h2 {
+    font-size: 2rem;
+    color: var(--primary-color);
+    margin-bottom: 10px;
+}
+
+#trusted-brands p {
+    font-size: 1rem;
+    color: var(--text-color);
+    margin-bottom: 20px;
+}
+
+/* Logo Grid */
+.brands-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.brands-container img {
+    width: 120px; /* Adjust the size based on design */
+    height: auto;
+    filter: grayscale(100%);
+    transition: filter 0.3s ease-in-out;
+}
+
+.brands-container img:hover {
+    filter: grayscale(0%);
+}
