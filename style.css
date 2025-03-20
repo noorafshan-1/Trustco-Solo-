@@ -741,7 +741,9 @@ nav ul li a:hover {
 /* Numbers Grid */
 .numbers-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    /* grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    */
+    grid-template-columns: 1fr;
     gap: 20px;
     max-width: 900px;
     margin: 0 auto;
@@ -773,13 +775,13 @@ nav ul li a:hover {
     color: #333;
 }
 
-/* Responsive Layout */
+/*Tablet Layout */
 @media (min-width: 768px) {
     .numbers-container {
         grid-template-columns: repeat(2, 1fr);
     }
 }
-
+/* Desktop Layout */
 @media (min-width: 1024px) {
     .numbers-container {
         grid-template-columns: repeat(4, 1fr);
