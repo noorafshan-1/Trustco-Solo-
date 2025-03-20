@@ -1124,18 +1124,17 @@ h2 {
     }
 }
 
-/* CTA Banner Section */
 #cta-banner {
-    /* background: linear-gradient(to right, #0f0f10, #101111); */
-    background-color: black;
-    color: white;
-    padding: 50px 20px;
-    text-align: center;
+    /* background-color: black; */
     display: flex;
+    flex-direction: row;  /* Default: side-by-side */
     justify-content: center;
+    text-align: center;
+    padding: 40px;
+    background: rgb(34, 32, 32); 
+    color: white;
     align-items: center;
 }
-
 /* Container */
 .cta-container {
     max-width: 900px;
@@ -1169,44 +1168,35 @@ h2 {
     margin-bottom: 20px;
 
 }
-
-
-
 .cta-button:hover {
     background-color: #ff9900;
 }
 
-/* Responsive Adjustments */
+
+
 @media (max-width: 767px) {
     #cta-banner {
-        padding: 40px 15px;
+        flex-direction: column; /* Stack elements */
+        text-align: center;
+        padding: 30px;
     }
 
-    .cta-text h2 {
-        font-size: 1.6rem;
+    .cta-buttons {
+        flex-direction: column; /* Stack buttons */
+        width: 100%;
     }
 
-    .cta-text p {
-        font-size: 1rem;
-    }
-
-    .cta-button {
-        font-size: 0.95rem;
-        padding: 10px 20px;
+    .cta-buttons button {
+        width: 100%; /* Full-width buttons on mobile */
     }
 }
 
-@media (max-width: 575px) {
-    .cta-text h2 {
-        font-size: 1.4rem;
+@media (max-width: 480px) {
+    .cta-content h2 {
+        font-size: 1.5rem;  /* Smaller font for mobile */
     }
 
-    .cta-text p {
-        font-size: 0.9rem;
-    }
-
-    .cta-button {
-        font-size: 0.9rem;
-        padding: 8px 18px;
+    .cta-content p {
+        font-size: 1rem;
     }
 }
