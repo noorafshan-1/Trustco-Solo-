@@ -510,3 +510,73 @@ nav ul li a:hover {
         font-size: 1.5rem; /* Reduce font size for better readability */
     }
 }
+
+/* Benefits Section Styling */
+#benefits {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #f9f9f9;
+}
+
+#benefits h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Card Container */
+.benefits-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+/* Individual Benefit Card */
+.benefit-card {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    max-width: 300px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.benefit-card:hover {
+    transform: translateY(-5px);
+}
+
+.benefit-card img {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 15px;
+}
+
+.benefit-card h3 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.benefit-card p {
+    font-size: 1rem;
+    color: #666;
+}
+
+
+@media (max-width: 768px) {
+    .benefits-container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.benefits-intro {
+    padding: 20px;
+    text-align: left;
+    max-width: 300px;
+   
+}
+
+
