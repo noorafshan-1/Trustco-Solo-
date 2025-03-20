@@ -1062,6 +1062,7 @@ h2 {
     background: #0056b3;
 }
 
+
 /* Responsive Design */
 @media (max-width: 1023px) {
     .blogs-wrapper {
@@ -1072,11 +1073,32 @@ h2 {
     .blog-card {
         max-width: 80%;
     }
+
+    .blog-title {
+        font-size: 1.1rem;
+    }
+
+    .blog-excerpt {
+        font-size: 0.9rem;
+    }
 }
 
 @media (max-width: 767px) {
     .blog-card {
         max-width: 90%;
+    }
+
+    .blog-title {
+        font-size: 1rem;
+    }
+
+    .blog-excerpt {
+        font-size: 0.85rem;
+    }
+
+    .see-all {
+        font-size: 1rem;
+        padding: 8px 16px;
     }
 }
 
@@ -1086,10 +1108,18 @@ h2 {
     }
 
     .blog-title {
-        font-size: 1.1rem;
+        font-size: 1rem;
     }
 
     .blog-excerpt {
+        font-size: 0.85rem;
+        max-height: 60px; /* Prevents overflow */
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    .see-all {
         font-size: 0.9rem;
+        padding: 8px 14px;
     }
 }
