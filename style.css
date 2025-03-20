@@ -512,65 +512,92 @@ nav ul li a:hover {
 }
 
 /* Benefits Section Styling */
+
 #benefits {
     text-align: center;
-    padding: 50px 20px;
-    background-color: #f9f9f9;
+    padding: 40px 20px;
+    background-color: #f8f8f8;
 }
 
 #benefits h2 {
     font-size: 2rem;
     margin-bottom: 20px;
-    color: #333;
 }
 
-/* Card Container */
+/* Benefits Container */
 .benefits-container {
     display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
+    flex-direction: column; /* Stack on small screens */
+    align-items: center;
     gap: 20px;
 }
 
 /* Individual Benefit Card */
 .benefit-card {
-    background: white;
+    background: #fff;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     padding: 20px;
+    max-width: 400px;
+    width: 100%;
     text-align: center;
-    max-width: 300px;
-    transition: transform 0.3s ease-in-out;
-}
-
-.benefit-card:hover {
-    transform: translateY(-5px);
 }
 
 .benefit-card img {
-    width: 80px;
+    width: 80px; /* Adjust for responsiveness */
     height: 80px;
-    margin-bottom: 15px;
+    object-fit: contain;
+    margin-bottom: 10px;
 }
 
 .benefit-card h3 {
     font-size: 1.5rem;
-    color: #333;
     margin-bottom: 10px;
 }
 
 .benefit-card p {
     font-size: 1rem;
-    color: #666;
+    color: #555;
 }
 
-
-@media (max-width: 768px) {
+/* Responsive Layout - Tablet & Desktop */
+@media (min-width: 768px) {
     .benefits-container {
-        flex-direction: column;
-        align-items: center;
+        flex-direction: row; /* Cards in a row on bigger screens */
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .benefit-card {
+        flex: 1;
+        max-width: 320px;
     }
 }
+
+/* Responsive Layout - Large Screens */
+@media (min-width: 1024px) {
+    #benefits {
+        padding: 60px;
+    }
+
+    .benefits-container {
+        gap: 30px;
+    }
+
+    .benefit-card {
+        max-width: 350px;
+        padding: 30px;
+    }
+
+    .benefit-card h3 {
+        font-size: 1.7rem;
+    }
+
+    .benefit-card p {
+        font-size: 1.1rem;
+    }
+}
+
 
 .benefits-intro {
     padding: 20px;
