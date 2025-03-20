@@ -272,7 +272,7 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 15px 50px;
-    background-color: rgb(219, 237, 220);
+    background-color: rgb(183, 211, 191);  
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     position: sticky;
     top: 0;
@@ -355,3 +355,81 @@ nav ul li a:hover {
         margin-top: 10px;
     }
 }
+
+
+
+/* Navigation Links */
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+}
+
+/* Login & Signup Buttons */
+.header-buttons button {
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.login-btn {
+    background: transparent;
+    color: white;
+    border: 1px solid white;
+}
+
+.signup-btn {
+    background: white;
+    color: gray;
+}
+
+/* Mobile Menu Styles */
+.menu-toggle {
+    display: none;
+    font-size: 2rem;
+    color: white;
+    cursor: pointer;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        background: gray;
+        width: 100%;
+        text-align: center;
+        padding: 10px 0;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .header-buttons {
+        display: none;
+    }
+}
+
+
+
+
+
+
+
+
+
