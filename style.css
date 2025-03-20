@@ -425,7 +425,7 @@ nav ul li a:hover {
     }
 }
 
-/* Video Section */
+/* ✅ Video Section */
 #video-section {
     text-align: center;
     padding: 40px 20px;
@@ -438,22 +438,24 @@ nav ul li a:hover {
     margin-bottom: 20px;
 }
 
-/* Video Container */
+/* ✅ Video Container */
 .video-container {
     position: relative;
     display: inline-block;
-}
-
-/* Video Thumbnail */
-.video-thumbnail {
     width: 100%;
     max-width: 600px;
+}
+
+/* ✅ Video Thumbnail */
+.thumbnail image {
+    width: 100%;
     border-radius: 10px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
     cursor: pointer;
+    display: block;
 }
 
-/* Play Icon */
+/* ✅ Play Icon Overlay */
 .play-icon {
     position: absolute;
     top: 50%;
@@ -472,14 +474,30 @@ nav ul li a:hover {
     transition: background 0.3s ease-in-out;
 }
 
-/* Hover Effect */
+/* ✅ Hover Effect */
 .video-container:hover .play-icon {
     background: rgba(0, 0, 0, 0.8);
 }
 
+/* ✅ RESPONSIVE DESIGN */
+
+/* Tablets (Max Width 768px) */
 @media (max-width: 768px) {
-    .video-thumbnail {
-        max-width: 100%;
+    .video-container {
+        max-width: 90%; /* Make it adapt to screen width */
+    }
+
+    .play-icon {
+        font-size: 2.5rem;
+        width: 70px;
+        height: 70px;
+    }
+}
+
+/* Mobile Devices (Max Width 480px) */
+@media (max-width: 480px) {
+    .video-container {
+        max-width: 95%;
     }
 
     .play-icon {
@@ -487,14 +505,8 @@ nav ul li a:hover {
         width: 60px;
         height: 60px;
     }
+
+    #video-section h2 {
+        font-size: 1.5rem; /* Reduce font size for better readability */
+    }
 }
-
-
-
-
-
-
-
-
-
-
