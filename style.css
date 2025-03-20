@@ -606,4 +606,116 @@ nav ul li a:hover {
    
 }
 
+#building-bridges {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #f0f8ff;
+}
+
+/* Content Styling */
+#building-bridges .content {
+    max-width: 600px;
+    margin-bottom: 20px;
+}
+
+#building-bridges h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.bridge-description {
+    font-size: 1.1rem;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+.bridge-benefits {
+    list-style: none;
+    padding: 0;
+}
+
+.bridge-benefits li {
+    font-size: 1rem;
+    color: #333;
+    margin: 5px 0;
+    position: relative;
+    padding-left: 20px;
+}
+
+.bridge-benefits li::before {
+    content: "✔";
+    color: #007BFF;
+    position: absolute;
+    left: 0;
+}
+
+/* CTA Button */
+.cta-button {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #007BFF;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background 0.3s ease-in-out;
+}
+
+.cta-button:hover {
+    background-color: #0056b3;
+}
+
+/* Image Styling */
+.image-container {
+    max-width: 500px;
+}
+
+.image-container img {
+    width: 100%;
+    height: auto;
+}
+
+/* Responsive Layout - Tablet & Desktop */
+@media (min-width: 768px) {
+    #building-bridges {
+        flex-direction: row;
+        justify-content: center;
+        text-align: left;
+        padding: 60px;
+    }
+
+    .content {
+        flex: 1;
+        max-width: 500px;
+        margin-right: 40px;
+    }
+
+    .image-container {
+        flex: 1;
+        max-width: 400px;
+    }
+}
+
+@media (min-width: 1024px) {
+    #building-bridges h2 {
+        font-size: 2.5rem;
+    }
+
+    .bridge-description {
+        font-size: 1.2rem;
+    }
+
+    .bridge-benefits li {
+        font-size: 1.1rem;
+    }
+
+    .cta-button {
+        font-size: 1.1rem;
+    }
+}
+
 
