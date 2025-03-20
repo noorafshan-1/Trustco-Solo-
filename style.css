@@ -606,13 +606,14 @@ nav ul li a:hover {
    
 }
 
+/* General Section Styling */
 #building-bridges {
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
     padding: 50px 20px;
-    background-color: #f0f8ff;
+    background-color: #f9f9f9;
 }
 
 /* Content Styling */
@@ -632,6 +633,7 @@ nav ul li a:hover {
     margin-bottom: 15px;
 }
 
+/* Benefits List */
 .bridge-benefits {
     list-style: none;
     padding: 0;
@@ -717,5 +719,4 @@ nav ul li a:hover {
         font-size: 1.1rem;
     }
 }
-
 
